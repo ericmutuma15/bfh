@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import IMG from "../assets/hosp.jpeg";
 import campImage from "../assets/camp.jpeg";
 import hydroponicsImage from "../assets/food0.jpeg";
 import trainingImage from "../assets/sch0.png";
 import clinicImage from "../assets/clinic.jpeg";
+import Appointments from "./Appointments";
 
 const Homepage = () => {
+  const [showAppointment, setShowAppointment] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
+      {showAppointment && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg relative max-w-lg w-full">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+              onClick={() => setShowAppointment(false)}
+              aria-label="Close"
+            >
+              &times;
+            </button>
+            <Appointments />
+          </div>
+        </div>
+      )}
       <main className="max-w-4xl mx-auto px-4">
         <section className="hero mt-8 flex flex-col md:flex-row items-center justify-between gap-8 py-8 px-4 bg-gradient-to-r from-blue-100 to-blue-50 rounded-xl shadow-lg mb-8">
           <div className="flex-1 text-left">
@@ -19,7 +36,9 @@ const Homepage = () => {
               for the community.
             </p>
             <div className="flex gap-4">
-              <button className="cta-btn">Book an Appointment</button>
+              <button className="cta-btn" onClick={() => setShowAppointment(true)}>
+                Book an Appointment
+              </button>
               <button className="cta-btn bg-green-600 hover:bg-green-700">
                 Consult a Doctor
               </button>
