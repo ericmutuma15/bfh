@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Custom styles for enhanced UX per PRD */
+body {
+  @apply bg-gray-50 text-gray-900 antialiased min-h-screen;
+}
+
+nav {
+  @apply sticky top-0 z-50 bg-white shadow-md flex justify-center py-2;
+}
+
+nav a {
+  @apply mx-3 text-base font-medium text-blue-700 hover:text-blue-900 transition-colors;
+}
+
+.cta-btn {
+  @apply px-6 py-3 rounded-lg font-semibold shadow-lg transition bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+.hero {
+  @apply flex flex-col md:flex-row items-center justify-between gap-8 py-8 px-4 bg-gradient-to-r from-blue-100 to-blue-50 rounded-xl shadow-lg mb-8;
+}
+
+.hero-img {
+  @apply w-full max-w-xs rounded-lg shadow-lg;
+}
+
+.section {
+  @apply my-8 p-6 bg-white rounded-xl shadow-md;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4 text-blue-800;
+}
+
+.section-content {
+  @apply text-base leading-relaxed;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    @apply flex-col px-2 py-4;
+  }
+  .section {
+    @apply p-2;
+  }
+}
