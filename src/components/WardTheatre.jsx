@@ -1,16 +1,26 @@
 import React from 'react';
-import IMG from '../assets/hosp.jpeg';
+import wardImage from '../assets/ward.jpeg'; // Assuming you have a ward image in your assets folder
 
 const WardTheatre = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-4">Ward & Theatre</h1>
-      <img src={IMG} alt="Ward and Theatre" className="w-full h-auto rounded-lg shadow-md mb-4" />
-      <p className="mb-4">Our wards and theatres are designed to provide a comfortable and safe environment for patients. With modern facilities and a dedicated team, we ensure the best care during your stay.</p>
-      <p className="mb-4">We also offer specialized surgical services with a focus on patient safety and recovery.</p>
-      <section className="mt-8">
-        <img src={IMG} alt="Ward & Theatre Project" className="w-full h-auto rounded-lg shadow-md mb-4" />
-      </section>
+    <div className="section">
+      <h1 className="section-title">Inpatient Ward & Minor Theatre</h1>
+      <img src={wardImage} alt="Inpatient Ward & Minor Theatre" className="w-full h-auto rounded-lg shadow-md mb-4" />
+      <p className="section-content mb-4">We provide comfortable inpatient care with attentive nursing, minor surgical procedures, and round-the-clock monitoring.</p>
+      <ul className="section-content mb-4 list-disc list-inside">
+        <li>Minor theatre procedures</li>
+        <li>Emergency care services</li>
+        <li>Observation wards for short stays</li>
+        <li>Inpatient triaging & management</li>
+      </ul>
+      <div className="section-content mb-2">
+        <span className="font-semibold">Features:</span>
+        <ul className="list-disc list-inside ml-4">
+          <li>Clean, well-equipped wards</li>
+          <li>Patient-centered care</li>
+          <li>Access to emergency medical support</li>
+        </ul>
+      </div>
     </div>
   );
 };

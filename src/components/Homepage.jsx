@@ -11,19 +11,6 @@ import DesignerLogo from '../assets/Designer.png';
 const Homepage = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      <nav className="sticky top-0 z-50 bg-white shadow-md flex justify-center py-2">
-        <div className="flex items-center space-x-4">
-          <img src={DesignerLogo} alt="Logo" className="h-8 w-auto" />
-          <span className="text-lg font-bold text-blue-800">Brook of Healing Centre</span>
-        </div>
-        <div className="flex-1 flex justify-center">
-          <Link to="/reception" className="mx-3 text-base font-medium text-blue-700 hover:text-blue-900 transition-colors">Reception</Link>
-          <Link to="/laboratory" className="mx-3 text-base font-medium text-blue-700 hover:text-blue-900 transition-colors">Laboratory</Link>
-          <Link to="/dental" className="mx-3 text-base font-medium text-blue-700 hover:text-blue-900 transition-colors">Dental</Link>
-          <Link to="/ward-theatre" className="mx-3 text-base font-medium text-blue-700 hover:text-blue-900 transition-colors">Ward & Theatre</Link>
-          <Link to="/health-consultation" className="mx-3 text-base font-medium text-blue-700 hover:text-blue-900 transition-colors">Health Consultation</Link>
-        </div>
-      </nav>
       <main className="max-w-4xl mx-auto px-4">
         <section className="hero mt-8 flex flex-col md:flex-row items-center justify-between gap-8 py-8 px-4 bg-gradient-to-r from-blue-100 to-blue-50 rounded-xl shadow-lg mb-8">
           <div className="flex-1 text-left">
@@ -46,9 +33,9 @@ const Homepage = () => {
         </section>
         <section className="section">
           <h2 className="section-title">Contact Us</h2>
-          <p className="section-content">Address: 123 Health St, Wellness City</p>
-          <p className="section-content">Phone: +1 234 567 890</p>
-          <p className="section-content">Email: contact@britishfamilyhospital.com</p>
+          <p className="section-content">Address: Kanyi apts, Kenya Israel, Machakos.</p>
+          <p className="section-content">Phone: +254 113 678 958</p>
+          <p className="section-content">Email: healingbrookmgd@gmail.com</p>
         </section>
         <section className="section">
           <h2 className="section-title">Latest News</h2>
