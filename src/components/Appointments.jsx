@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Appointments = () => {
+  const [step, setStep] = useState("form");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -8,6 +10,7 @@ const Appointments = () => {
     day: "",
     reason: ""
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -20,7 +23,72 @@ const Appointments = () => {
       `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nDay: ${form.day}\nReason: ${form.reason}`
     );
     window.location.href = `mailto:healingbrookmgd@gmail.com?subject=${subject}&body=${body}`;
+    setStep("confirm");
   };
+
+  const handleConfirm = () => {
+    setStep("success");
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
+  };
+
+  const handleNo = () => {
+    setStep("form");
+  };
+
+  const handleExit = () => {
+    setStep("error");
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
+  };
+
+  if (step === "error") {
+    return (
+      <div className="p-8 text-center">
+        <div className="text-red-600 text-2xl font-bold mb-2">Appointment request not booked!</div>
+        <div className="text-gray-700">You exited before sending your request. Please try again.</div>
+      </div>
+    );
+  }
+
+  if (step === "success") {
+    return (
+      <div className="p-8 text-center">
+        <div className="text-green-600 text-2xl font-bold mb-2">Appointment request sent!</div>
+        <div className="text-gray-700">Thank you for booking. We will contact you soon.</div>
+      </div>
+    );
+  }
+
+  if (step === "confirm") {
+    return (
+      <div className="p-8 text-center">
+        <div className="text-lg mb-4">Did you send the email in your mail app?</div>
+        <div className="flex justify-center gap-4">
+          <button
+            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 font-semibold"
+            onClick={handleConfirm}
+          >
+            Yes, I sent it
+          </button>
+          <button
+            className="bg-gray-400 text-white px-6 py-2 rounded hover:bg-gray-500 font-semibold"
+            onClick={handleNo}
+          >
+            No, go back to form
+          </button>
+          <button
+            className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 font-semibold"
+            onClick={handleExit}
+          >
+            Exit
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md mt-8">
