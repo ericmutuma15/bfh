@@ -73,7 +73,7 @@ const Homepage = () => {
                   <strong>RHYME TRAINING INSTITUTE</strong> – Our accredited training institute for health and empowerment.
                 </li>
               </ul>
-              <div className="mt-4 text-sm text-gray-600">Ndio we won't be told we are operating a non registered hospital.</div>
+              
             </div>
             <div className="flex gap-4 mt-6">
               <button className="cta-btn" onClick={() => setShowAppointment(true)}>
