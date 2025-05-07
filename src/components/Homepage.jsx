@@ -31,11 +31,51 @@ const Homepage = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-blue-900">
               Welcome to Brook of Healing Centre
             </h1>
-            <p className="mb-6 text-lg text-gray-700">
-              A modern hospital dedicated to healing, hope, and practical skills
-              for the community.
+            <p className="mb-4 text-lg text-gray-700">
+              A Christ-centered healing initiative based in Kenya, dedicated to health, education, and empowerment.
             </p>
-            <div className="flex gap-4">
+            <ul className="mb-4 list-disc pl-6 text-gray-700">
+              <li>Medical camps for the needy and people with disabilities</li>
+              <li>A faith-based health training school</li>
+              <li>Sustainable food projects like hydroponics for arid regions</li>
+            </ul>
+            <blockquote className="italic text-blue-800 mb-4">
+              “Where there is no vision, the people perish.” – Proverbs 29:18
+            </blockquote>
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-blue-800 mb-2">About Us</h2>
+              <p className="mb-2">
+                <strong>Our Story:</strong> Brook of Healing Centre began as a personal calling to serve both body and soul. Founded by a saved Christian woman, divorced and a mother of two, who overcame life’s trials with faith and resilience, the Centre now serves as a light to others.
+              </p>
+              <p className="mb-2">
+                <strong>Our Mission:</strong> To bring healing, hope, and practical skills to communities through Christ-led healthcare and training.
+              </p>
+              <p className="mb-2">
+                <strong>Our Vision:</strong> A thriving generation, spiritually and physically empowered, especially the disadvantaged.
+              </p>
+              <p className="mb-2">
+                <strong>Our Values:</strong> Faith & Compassion, Integrity in Service, Dignity for All, Empowerment through Knowledge
+              </p>
+            </div>
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-blue-800 mb-2">We have incorporated:</h2>
+              <ul className="list-disc pl-6 text-gray-700">
+                <li>
+                  <strong>BRITISH FAMILY HOSPITAL</strong> – Our registered hospital serving the community.
+                  <button
+                    className="ml-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 font-semibold text-sm"
+                    onClick={() => window.open("https://britishfamilyhospital.co.ke", "_blank")}
+                  >
+                    Visit Website
+                  </button>
+                </li>
+                <li>
+                  <strong>RHYME TRAINING INSTITUTE</strong> – Our accredited training institute for health and empowerment.
+                </li>
+              </ul>
+              <div className="mt-4 text-sm text-gray-600">Ndio we won't be told we are operating a non registered hospital.</div>
+            </div>
+            <div className="flex gap-4 mt-6">
               <button className="cta-btn" onClick={() => setShowAppointment(true)}>
                 Book an Appointment
               </button>
@@ -43,6 +83,7 @@ const Homepage = () => {
                 Consult a Doctor
               </button>
             </div>
+            <div className="mt-2 text-gray-700 text-sm">Book your appointment with us today for quality, Christ-centered care.</div>
           </div>
           <img src={IMG} alt="Hospital" className="hero-img" />
         </section>
