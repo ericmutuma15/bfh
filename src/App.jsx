@@ -7,6 +7,7 @@ import Dental from './components/Dental';
 import WardTheatre from './components/WardTheatre';
 import Layout from './components/Layout';
 import Courses from "./components/Courses";
+import Waiting from './components/Waiting';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/dental" element={<Dental />} />
           <Route path="/ward-theatre" element={<WardTheatre />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/waiting" element={<Waiting />} />
         </Routes>
       </Layout>
     </Router>
