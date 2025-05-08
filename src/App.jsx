@@ -6,6 +6,7 @@ import Laboratory from './components/Laboratory';
 import Dental from './components/Dental';
 import WardTheatre from './components/WardTheatre';
 import Layout from './components/Layout';
+import Courses from "./components/Courses";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/laboratory" element={<Laboratory />} />
           <Route path="/dental" element={<Dental />} />
           <Route path="/ward-theatre" element={<WardTheatre />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
       </Layout>
     </Router>

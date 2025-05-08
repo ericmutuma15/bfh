@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import IMG from "../assets/hosp.jpeg";
 import campImage from "../assets/camp.jpeg";
 import hydroponicsImage from "../assets/food0.jpeg";
@@ -120,7 +121,7 @@ const Homepage = () => {
         <section className="section">
           <h2 className="section-title">Programs</h2>
           <ul className="grid md:grid-cols-2 gap-6 mt-4">
-            <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
+          <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
               <span className="font-semibold mb-2">
                 Christian Health Training School
               </span>
@@ -134,6 +135,15 @@ const Homepage = () => {
                 alt="Christian Health Training School"
                 className="w-full h-auto rounded-lg shadow-md mt-4"
               />
+              {/* ← New button */}
+              <div className="mt-4">
+                <Link
+                  to="/courses"
+                  className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-semibold"
+                >
+                  View Courses
+                </Link>
+              </div>
             </li>
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
               <span className="font-semibold mb-2">Medical Camps</span>
