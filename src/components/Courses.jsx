@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import one image per course (swap these with your actual image files)
-import img1  from "../assets/community.jpeg";
+import img1  from "../assets/hiv.jpeg";
 import img2  from "../assets/nutrition.jpeg";
 import img3  from "../assets/community.jpeg";
 import img4  from "../assets/dental0.jpeg";
