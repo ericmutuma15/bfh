@@ -8,6 +8,7 @@ import WardTheatre from './components/WardTheatre';
 import Layout from './components/Layout';
 import Courses from "./components/Courses";
 import Waiting from './components/Waiting';
+import HealthServices from './components/HealthServices';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/ward-theatre" element={<WardTheatre />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/waiting" element={<Waiting />} />
+          <Route path="/health-services" element={<HealthServices />} />
         </Routes>
       </Layout>
     </Router>

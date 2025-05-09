@@ -64,6 +64,12 @@ const Homepage = () => {
                   >
                     Visit Website
                   </button>
+                  <Link
+                    to="/health-services"
+                    className="ml-2 inline-block bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 font-semibold text-sm"
+                  >
+                    View Services
+                  </Link>
                 </li>
                 <li>
                   <strong>RHYME TRAINING INSTITUTE</strong> – Our accredited
@@ -121,8 +127,8 @@ const Homepage = () => {
           <p className="section-content">
             Address: Kanyi apts, Kenya Israel, Machakos.
           </p>
-          <p className="section-content">Phone: +254 113 678 958</p>
-          <p className="section-content">Email: healingbrookmgd@gmail.com</p>
+          <p className="section-content">Phone: +254 113 678 958/ +254 704 478 783</p>
+          <p className="section-content">Email: britishfh21@gmail.com/ rhymetrain24@gmail.com</p>
         </section>
 
         <section className="section">
@@ -139,7 +145,7 @@ const Homepage = () => {
           <ul className="grid md:grid-cols-2 gap-6 mt-4">
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
               <span className="font-semibold mb-2">
-                Christian Health Training School
+                Christian-Based Health Training School
               </span>
               <span>
                 We train young people in healthcare with practical exposure in
@@ -191,16 +197,23 @@ const Homepage = () => {
             </li>
 
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
-              <span className="font-semibold mb-2">Clinic Services</span>
+              <span className="font-semibold mb-2">Family Healthcare Services</span>
               <span>
-                We offer consultations, lab tests, and x-ray services using our
-                mobile X-ray machine.
+                We offer multispecialty healthcare for the whole family on outpatient and inpatient.
               </span>
               <img
                 src={clinicImage}
                 alt="Clinic Services"
                 className="w-full h-auto rounded-lg shadow-md mt-4"
               />
+              <div className="mt-4">
+                <Link
+                  to="/health-services"
+                  className="inline-block bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-700 font-semibold"
+                >
+                  View Services
+                </Link>
+              </div>
             </li>
           </ul>
         </section>

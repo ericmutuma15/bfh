@@ -1,7 +1,9 @@
 // src/components/Courses.jsx
 import React from "react";
 
-// Import one image per course (swap these with your actual image files)
+import { Download } from "lucide-react";
+import brochureImage from "../assets/rhyme_brochure.jpeg";
+// Import one image per course 
 import img1  from "../assets/hiv.jpeg";
 import img2  from "../assets/nutrition.jpeg";
 import img3  from "../assets/community.jpeg";
@@ -45,6 +47,16 @@ const shortCourses = [
 const Courses = () => (
   <div className="min-h-screen bg-gray-50 text-gray-900 py-12 px-4">
     <div className="max-w-4xl mx-auto">
+    <div className="mb-8 flex justify-center">
+        <a
+          href={brochureImage}
+          download
+          className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-lg px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-200"
+        >
+          <Download className="w-5 h-5" />
+          Download Brochure
+        </a>
+      </div>
       <h1 className="text-3xl font-bold text-center text-blue-800 mb-8">
         Our Courses
       </h1>
@@ -52,7 +64,7 @@ const Courses = () => (
       {/* Diploma & Certificate */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-red-600 mb-4">
-          Diploma & Certificate Courses
+          Health, Vocational & Development Courses
         </h2>
         <ul className="grid md:grid-cols-2 gap-6">
           {diplomaCourses.map(({ title, image }) => (
