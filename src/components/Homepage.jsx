@@ -43,7 +43,7 @@ const Homepage = () => {
               <li>Comprehensive family healthcare</li>
               <li>Home-based care for the bedridden, disabled or the elderly</li>
               <li>Medical camps for the needy and people with disabilities</li>
-              <li>A faith-based health training school</li>
+              <li>A faith-based technical, vocational and health training school</li>
               <li>
                 Sustainable food projects like hydroponics for arid regions
               </li>

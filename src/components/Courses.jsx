@@ -4,17 +4,20 @@ import React from "react";
 import { Download } from "lucide-react";
 import brochureImage from "../assets/rhyme_brochure.jpeg";
 // Import one image per course 
-import img1  from "../assets/hiv.jpeg";
-import img2  from "../assets/nutrition.jpeg";
-import img3  from "../assets/community.jpeg";
-import img4  from "../assets/dental0.jpeg";
-import img5  from "../assets/business.jpeg";
-import img6  from "../assets/computer.jpeg";
-import img7  from "../assets/plumbing.jpeg";
-import img8  from "../assets/firstaid0.jpeg";
-import img9  from "../assets/foodbev.jpeg";
+import img1 from "../assets/hiv.jpeg";
+import img2 from "../assets/nutrition.jpeg";
+import img3 from "../assets/community.jpeg";
+import img4 from "../assets/dental0.jpeg";
+import img5 from "../assets/business.jpeg";
+import img6 from "../assets/computer.jpeg";
+import img7 from "../assets/plumbing.jpeg";
+import img8 from "../assets/firstaid0.jpeg";
+import img9 from "../assets/foodbev.jpeg";
 import img10 from "../assets/environment.jpeg";
 import img11 from "../assets/theology.jpeg";
+import img12 from "../assets/dnc.avif";
+import img13 from "../assets/ut.jpg";
+import img14 from "../assets/xray.avif";
 
 import sImg1 from "../assets/hivcert.jpeg";
 import sImg2 from "../assets/packages.jpeg";
@@ -23,31 +26,34 @@ import sImg4 from "../assets/bible.jpeg";
 import sImg5 from "../assets/signlang.jpeg";
 
 const diplomaCourses = [
-  { title: "Community Health & HIV/AIDS Management",      image: img1  },
-  { title: "Nutrition & Dietetics",                       image: img2  },
-  { title: "Community Health & Development",              image: img3  },
-  { title: "Dental Assistant Technology",                 image: img4  },
-  { title: "Business Management",                         image: img5  },
-  { title: "Computer Applications",                       image: img6  },
-  { title: "Water Technology & Plumbing",                 image: img7  },
+  { title: "Community Health & HIV/AIDS Management", image: img1 },
+  { title: "Nutrition & Dietetics", image: img2 },
+  { title: "Community Health & Development", image: img3 },
+  { title: "Dental Assistant Technology", image: img4 },
+  { title: "Dental Nursing Certificate", image: img12 },
+  { title: "Ultrasound Technology", image: img13 },
+  { title: "X-Ray Technology", image: img14 },
+  { title: "Business Management", image: img5 },
+  { title: "Computer Applications", image: img6 },
+  { title: "Water Technology & Plumbing", image: img7 },
   { title: "First Aid, Home Based Care & Drug Addiction Intervention", image: img8 },
-  { title: "Food & Beverage",                             image: img9  },
-  { title: "Environment, Climate Change & Health",        image: img10 },
-  { title: "Bible Studies and Theology",                  image: img11 },
+  { title: "Food & Beverage", image: img9 },
+  { title: "Environment, Climate Change & Health", image: img10 },
+  { title: "Bible Studies and Theology", image: img11 },
 ];
 
 const shortCourses = [
   { title: "Certificate in HIV & HIV Counselling & Testing", image: sImg1 },
-  { title: "Computer Packages",                              image: sImg2 },
+  { title: "Computer Packages", image: sImg2 },
   { title: "Home Management & Basic Care Giving (Basic Literacy)", image: sImg3 },
-  { title: "Theology & Biblical Studies",                    image: sImg4 },
-  { title: "Kenyan Sign Language",                          image: sImg5 },
+  { title: "Theology & Biblical Studies", image: sImg4 },
+  { title: "Kenyan Sign Language", image: sImg5 },
 ];
 
 const Courses = () => (
   <div className="min-h-screen bg-gray-50 text-gray-900 py-12 px-4">
     <div className="max-w-4xl mx-auto">
-    <div className="mb-8 flex justify-center">
+      <div className="mb-8 flex justify-center">
         <a
           href={brochureImage}
           download
@@ -108,6 +114,16 @@ const Courses = () => (
           ))}
         </ul>
       </section>
+      <div className="mb-8 flex justify-center">
+        <a
+          href={brochureImage}
+          download
+          className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-lg px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-200"
+        >
+          <Download className="w-5 h-5" />
+          Download Brochure
+        </a>
+      </div>
     </div>
   </div>
 );
