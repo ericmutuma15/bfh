@@ -137,7 +137,7 @@ const Homepage = () => {
           <h2 className="section-title">Latest News</h2>
           <ul className="mt-4 list-disc list-inside">
             <li>New state-of-the-art X-Ray machine installed.</li>
-            <li>Free health check-up camp on May 15, 2025.</li>
+            <li>Free health check-up camp on May 30th and 31st of 2025.</li>
             <li>Partnership with Global Health Initiative announced.</li>
           </ul>
         </section>
@@ -147,7 +147,7 @@ const Homepage = () => {
           <ul className="grid md:grid-cols-2 gap-6 mt-4">
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
               <span className="font-semibold mb-2">
-                Christian-Based Health Training School
+                Faith-Based Technical, Vocational & Health Training School
               </span>
               <span>
                 We train young people in healthcare with practical exposure in
