@@ -40,6 +40,8 @@ const Homepage = () => {
               health, education, and empowerment.
             </p>
             <ul className="mb-4 list-disc pl-6 text-gray-700">
+              <li>Comprehensive family healthcare</li>
+              <li>Home-based care for the bedridden, disabled or the elderly</li>
               <li>Medical camps for the needy and people with disabilities</li>
               <li>A faith-based health training school</li>
               <li>
@@ -87,7 +89,7 @@ const Homepage = () => {
             <div className="flex gap-4 mt-6">
               <button
                 className="cta-btn"
-                onClick={() => navigate("/waiting")}
+                onClick={() => navigate("/appointments")}
               >
                 Book an Appointment
               </button>
