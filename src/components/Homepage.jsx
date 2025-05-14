@@ -109,20 +109,40 @@ const Homepage = () => {
         </section>
 
         <section className="section">
-          <h2 className="section-title">Our Mission</h2>
-          <p className="section-content">
-            To bring healing, hope, and practical skills to communities through
-            Christ-led healthcare and training.
-          </p>
-        </section>
+  <h2 className="section-title">Our Story</h2>
+  <p className="section-content">
+    Brook of Healing Centre began as a personal calling to serve both body and soul.  
+    Founded by a saved Christian woman—divorced and a mother of two—who overcame disability  
+    and rejection with faith and resilience, the Centre now serves as a light to others.
+  </p>
+</section>
 
-        <section className="section">
-          <h2 className="section-title">Our Vision</h2>
-          <p className="section-content">
-            A thriving generation, spiritually and physically empowered,
-            especially the disadvantaged.
-          </p>
-        </section>
+<section className="section">
+  <h2 className="section-title">Our Mission</h2>
+  <p className="section-content">
+    To bring healing, hope, and practical skills to communities through  
+    Christ-led healthcare and training.
+  </p>
+</section>
+
+<section className="section">
+  <h2 className="section-title">Our Vision</h2>
+  <p className="section-content">
+    A thriving generation, spiritually and physically empowered,  
+    especially the disadvantaged.
+  </p>
+</section>
+
+<section className="section">
+  <h2 className="section-title">Our Values</h2>
+  <ul className="section-content list-disc list-inside space-y-1">
+    <li>Faith &amp; Compassion</li>
+    <li>Integrity in Service</li>
+    <li>Dignity for All</li>
+    <li>Empowerment through Knowledge</li>
+  </ul>
+</section>
+
 
         <section className="section">
           <h2 className="section-title">Contact Us</h2>
