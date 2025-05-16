@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import DesignerLogo from '../assets/Designer.png';
 
 const navLinks = [
-  { to: '/', label: 'Home', icon: '🏠' },
-  { to: '/reception', label: 'About Us', icon: '🛎️' },
-  { to: '/laboratory', label: 'Laboratory', icon: '🔬' },
-  { to: '/dental', label: 'Dental', icon: '🦷' },
-  { to: '/ward-theatre', label: 'Ward & Theatre', icon: '🏥' },
+  { to: "/", label: "Home", icon: "🏠" },
+  { to: "/health-services", label: "Ward & Theatre", icon: "🏥" },
+  { to: "/courses", label: "Courses", icon: "📚" },
+  { to: "/gallery", label: "Dental", icon: "🖼️" },
+  
 ];
 
 const Layout = ({ children }) => {
