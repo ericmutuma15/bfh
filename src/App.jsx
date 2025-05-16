@@ -10,6 +10,7 @@ import Courses from "./components/Courses";
 import Waiting from './components/Waiting';
 import HealthServices from './components/HealthServices';
 import Appointments from './components/Appointments';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/waiting" element={<Waiting />} />
           <Route path="/health-services" element={<HealthServices />} />
           <Route path="/appointments" element={<Appointments />} />
+          <Route path="/gallery" element={<Gallery />} />
+          {/* Add more routes as needed */}
         </Routes>
       </Layout>
     </Router>
