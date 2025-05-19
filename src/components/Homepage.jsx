@@ -56,14 +56,21 @@ const Homepage = () => {
               Welcome to Brook of Healing Centre
             </h1>
             <p className="mb-4 text-lg text-gray-700">
-              A Christ-centered healing initiative based in Kenya, dedicated to health, education, and empowerment.
+              A Christ-centered healing initiative based in Kenya, dedicated to
+              health, education, and empowerment.
             </p>
             <ul className="mb-4 list-disc pl-6 text-gray-700 space-y-1">
               <li>Comprehensive family healthcare</li>
-              <li>Home-based care for the bedridden, disabled or the elderly</li>
+              <li>
+                Home-based care for the bedridden, disabled or the elderly
+              </li>
               <li>Medical camps for the needy and people with disabilities</li>
-              <li>A faith-based technical, vocational and health training school</li>
-              <li>Sustainable food projects like hydroponics for arid regions</li>
+              <li>
+                A faith-based technical, vocational and health training school
+              </li>
+              <li>
+                Sustainable food projects like hydroponics for arid regions
+              </li>
             </ul>
             <blockquote className="italic text-blue-800 mb-4">
               “Where there is no vision, the people perish.” – Proverbs 29:18
@@ -76,10 +83,13 @@ const Homepage = () => {
               </h2>
               <ul className="list-disc pl-6 text-gray-700 space-y-3">
                 <li>
-                  <strong>BRITISH FAMILY HOSPITAL</strong> – Our registered hospital serving the community.
+                  <strong>BRITISH FAMILY HOSPITAL</strong> – Our registered
+                  hospital serving the community.
                   <button
                     className="ml-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 font-semibold text-sm"
-                    onClick={() => navigate("/waiting")}
+                    onClick={() =>
+                      window.open("https://bfhosp.vercel.app", "_blank")
+                    }
                   >
                     Visit Website
                   </button>
@@ -91,7 +101,8 @@ const Homepage = () => {
                   </Link>
                 </li>
                 <li>
-                  <strong>RHYME TRAINING INSTITUTE</strong> – Our accredited training institute for health and empowerment.
+                  <strong>RHYME TRAINING INSTITUTE</strong> – Our accredited
+                  training institute for health and empowerment.
                   <Link
                     to="/courses"
                     className="ml-2 inline-block bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 font-semibold text-sm"
@@ -118,7 +129,8 @@ const Homepage = () => {
               </button>
             </div>
             <div className="mt-2 text-gray-700 text-sm">
-              Book your appointment with us today for quality, Christ-centered care.
+              Book your appointment with us today for quality, Christ-centered
+              care.
             </div>
           </div>
           <img
@@ -132,7 +144,9 @@ const Homepage = () => {
         <section className="section bg-white rounded-lg shadow p-6 mb-8">
           <h2 className="section-title">Now Available in Meru &amp; Mombasa</h2>
           <p className="section-content">
-            Our training and outreach programs are now extended to Meru County and Mombasa. This expansion brings quality healthcare training and services closer to your community.
+            Our training and outreach programs are now extended to Meru County
+            and Mombasa. This expansion brings quality healthcare training and
+            services closer to your community.
           </p>
         </section>
 
@@ -140,7 +154,10 @@ const Homepage = () => {
         <section className="section mb-8">
           <h2 className="section-title">Our Story</h2>
           <p className="section-content">
-            Brook of Healing Centre began as a personal calling to serve both body and soul. Founded by a saved Christian woman—divorced and a mother of two—who overcame disability and rejection with faith and resilience, the Centre now serves as a light to others.
+            Brook of Healing Centre began as a personal calling to serve both
+            body and soul. Founded by a saved Christian woman—divorced and a
+            mother of two—who overcame disability and rejection with faith and
+            resilience, the Centre now serves as a light to others.
           </p>
         </section>
 
@@ -148,7 +165,8 @@ const Homepage = () => {
         <section className="section mb-8">
           <h2 className="section-title">Our Mission</h2>
           <p className="section-content">
-            To bring healing, hope, and practical skills to communities through Christ-led healthcare and training.
+            To bring healing, hope, and practical skills to communities through
+            Christ-led healthcare and training.
           </p>
         </section>
 
@@ -156,7 +174,8 @@ const Homepage = () => {
         <section className="section mb-8">
           <h2 className="section-title">Our Vision</h2>
           <p className="section-content">
-            A thriving generation, spiritually and physically empowered, especially the disadvantaged.
+            A thriving generation, spiritually and physically empowered,
+            especially the disadvantaged.
           </p>
         </section>
 
@@ -174,9 +193,15 @@ const Homepage = () => {
         {/* Contact Us */}
         <section className="section mb-8">
           <h2 className="section-title">Contact Us</h2>
-          <p className="section-content">Address: Kanyi Apts, Kenya Israel, Machakos.</p>
-          <p className="section-content">Phone: +254 113 678 958 / +254 704 478 783</p>
-          <p className="section-content">Email: britishfh21@gmail.com / rhymetrain24@gmail.com</p>
+          <p className="section-content">
+            Address: Kanyi Apts, Kenya Israel, Machakos.
+          </p>
+          <p className="section-content">
+            Phone: +254 113 678 958 / +254 704 478 783
+          </p>
+          <p className="section-content">
+            Email: britishfh21@gmail.com / rhymetrain24@gmail.com
+          </p>
         </section>
 
         {/* Latest News */}
@@ -199,7 +224,9 @@ const Homepage = () => {
                 Faith-Based Technical, Vocational &amp; Health Training School
               </span>
               <span>
-                We train young people in healthcare with practical exposure in our own clinic, equipping 100 students each year in nursing, lab, and community health.
+                We train young people in healthcare with practical exposure in
+                our own clinic, equipping 100 students each year in nursing,
+                lab, and community health.
               </span>
               <img
                 src={trainingImage}
@@ -218,7 +245,9 @@ const Homepage = () => {
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
               <span className="font-semibold mb-2">Medical Camps</span>
               <span>
-                Outreach programs providing free services to rural areas, with special focus on the disabled and mental health. Next camp: April 26, 2025.
+                Outreach programs providing free services to rural areas, with
+                special focus on the disabled and mental health. Next camp:
+                April 26, 2025.
               </span>
               <img
                 src={campImage}
@@ -229,9 +258,12 @@ const Homepage = () => {
 
             {/* Hydroponics */}
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
-              <span className="font-semibold mb-2">Hydroponics &amp; Food Security</span>
+              <span className="font-semibold mb-2">
+                Hydroponics &amp; Food Security
+              </span>
               <span>
-                A pilot farm showcases how older people in dry areas can grow fresh produce using minimal water and space.
+                A pilot farm showcases how older people in dry areas can grow
+                fresh produce using minimal water and space.
               </span>
               <img
                 src={hydroponicsImage}
@@ -242,9 +274,12 @@ const Homepage = () => {
 
             {/* Clinic Services */}
             <li className="shadow-lg rounded-xl bg-white text-black p-4 flex flex-col">
-              <span className="font-semibold mb-2">Family Healthcare Services</span>
+              <span className="font-semibold mb-2">
+                Family Healthcare Services
+              </span>
               <span>
-                Multispecialty outpatient and inpatient care for the whole family—including lab tests and mobile X-ray.
+                Multispecialty outpatient and inpatient care for the whole
+                family—including lab tests and mobile X-ray.
               </span>
               <img
                 src={clinicImage}
